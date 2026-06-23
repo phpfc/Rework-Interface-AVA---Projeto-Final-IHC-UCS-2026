@@ -1,0 +1,48 @@
+import type { Deadline } from '../types'
+
+export const mockDeadlines: Deadline[] = [
+  {
+    id: 'deadline-1',
+    title: 'Trabalho 01',
+    type: 'trabalho',
+    dueDate: '2026-07-01',
+    courseName: 'Interface Humano Computador',
+    courseCode: 'FBI4021',
+    professorName: 'Prof.ª Elisa Boff',
+    room: 'Bloco 71 - 307',
+  },
+  {
+    id: 'deadline-2',
+    title: 'Trabalho 02',
+    type: 'trabalho',
+    dueDate: '2026-07-02',
+    courseName: 'Programação Orientada a Objetos (Turma X)',
+    courseCode: 'FBI0000',
+    professorName: 'Prof. Fulano de Tal',
+    room: 'Bloco 71 - 600',
+  },
+  {
+    id: 'deadline-3',
+    title: 'Prova 01',
+    type: 'prova',
+    dueDate: '2026-07-12',
+    courseName: 'Interface Humano Computador',
+    courseCode: 'FBI4021',
+    professorName: 'Prof.ª Elisa Boff',
+    room: 'Bloco 71 - 307',
+    quizId: 'quiz-1',
+    summaryId: 'summary-1',
+  },
+  {
+    id: 'deadline-4',
+    title: 'Prova 01',
+    type: 'prova',
+    dueDate: '2026-07-13',
+    courseName: 'Programação Orientada a Objetos',
+    courseCode: 'FBI0000',
+    professorName: 'Prof. Fulano de Tal',
+    room: 'Bloco 71 - 600',
+    quizId: 'quiz-2',
+    summaryId: 'summary-2',
+  },
+]

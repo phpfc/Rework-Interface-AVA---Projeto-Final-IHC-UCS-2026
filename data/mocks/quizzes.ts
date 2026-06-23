@@ -1,0 +1,116 @@
+import type { Quiz } from '../types'
+
+export const mockQuizzes: Quiz[] = [
+  {
+    id: 'quiz-1',
+    courseId: 'course-1',
+    courseName: 'Interface Humano Computador',
+    title: 'Prova 01 - Interface Humano Computador',
+    questions: [
+      {
+        id: 'q-1',
+        order: 1,
+        statement: 'Qual é o principal objetivo da criação de personas no processo de design de interação?',
+        alternatives: [
+          { id: 'q1-a', text: 'Substituir a necessidade de testes com usuários reais.', isCorrect: false },
+          { id: 'q1-b', text: 'Representar arquétipos de usuários para guiar decisões de design.', isCorrect: true },
+          { id: 'q1-c', text: 'Documentar todos os possíveis usuários do sistema.', isCorrect: false },
+          { id: 'q1-d', text: 'Criar perfis de marketing para o produto.', isCorrect: false },
+        ],
+        bookmarked: false,
+        flagged: false,
+      },
+      {
+        id: 'q-2',
+        order: 2,
+        statement: 'A heurística de Nielsen "Visibilidade do status do sistema" estabelece que:',
+        alternatives: [
+          { id: 'q2-a', text: 'O sistema deve sempre exibir todas as informações disponíveis na tela.', isCorrect: false },
+          { id: 'q2-b', text: 'O sistema deve manter o usuário informado sobre o que está acontecendo, por meio de feedback apropriado e em tempo razoável.', isCorrect: true },
+          { id: 'q2-c', text: 'O sistema deve esconder processos complexos do usuário para não confundi-lo.', isCorrect: false },
+          { id: 'q2-d', text: 'O sistema deve exibir barras de progresso em todas as operações.', isCorrect: false },
+        ],
+        bookmarked: false,
+        flagged: false,
+      },
+      {
+        id: 'q-3',
+        order: 3,
+        statement: 'O que é usabilidade, segundo a norma ISO 9241-11?',
+        alternatives: [
+          { id: 'q3-a', text: 'A capacidade de um sistema ser visualmente atraente.', isCorrect: false },
+          { id: 'q3-b', text: 'A medida em que um produto pode ser usado por usuários específicos para alcançar objetivos específicos com eficácia, eficiência e satisfação em um contexto de uso específico.', isCorrect: true },
+          { id: 'q3-c', text: 'A velocidade com que o sistema responde às interações do usuário.', isCorrect: false },
+          { id: 'q3-d', text: 'A facilidade com que o código do sistema pode ser mantido.', isCorrect: false },
+        ],
+        bookmarked: false,
+        flagged: false,
+      },
+      {
+        id: 'q-4',
+        order: 4,
+        statement: 'Qual heurística de Nielsen está relacionada ao uso de linguagem familiar ao usuário, evitando termos técnicos do sistema?',
+        alternatives: [
+          { id: 'q4-a', text: 'Prevenção de erros.', isCorrect: false },
+          { id: 'q4-b', text: 'Consistência e padrões.', isCorrect: false },
+          { id: 'q4-c', text: 'Correspondência entre o sistema e o mundo real.', isCorrect: true },
+          { id: 'q4-d', text: 'Reconhecimento em vez de memorização.', isCorrect: false },
+        ],
+        bookmarked: false,
+        flagged: false,
+      },
+      {
+        id: 'q-5',
+        order: 5,
+        statement: 'O mapa de empatia é uma ferramenta utilizada para:',
+        alternatives: [
+          { id: 'q5-a', text: 'Mapear a arquitetura da informação do sistema.', isCorrect: false },
+          { id: 'q5-b', text: 'Compreender o que o usuário pensa, sente, vê, ouve, fala e faz em relação ao produto.', isCorrect: true },
+          { id: 'q5-c', text: 'Avaliar a performance técnica da interface.', isCorrect: false },
+          { id: 'q5-d', text: 'Documentar os requisitos funcionais do sistema.', isCorrect: false },
+        ],
+        bookmarked: false,
+        flagged: false,
+      },
+      {
+        id: 'q-6',
+        order: 6,
+        statement: 'A jornada do usuário é um artefato que representa:',
+        alternatives: [
+          { id: 'q6-a', text: 'O fluxo de dados dentro do sistema.', isCorrect: false },
+          { id: 'q6-b', text: 'Os passos que um usuário percorre ao interagir com um produto ou serviço, incluindo pontos de contato e emoções.', isCorrect: true },
+          { id: 'q6-c', text: 'A estrutura de navegação do site.', isCorrect: false },
+          { id: 'q6-d', text: 'O ciclo de vida do desenvolvimento do software.', isCorrect: false },
+        ],
+        bookmarked: false,
+        flagged: false,
+      },
+      {
+        id: 'q-7',
+        order: 7,
+        statement: 'Qual das seguintes alternativas NÃO é uma das 10 heurísticas de usabilidade de Nielsen?',
+        alternatives: [
+          { id: 'q7-a', text: 'Liberdade e controle do usuário.', isCorrect: false },
+          { id: 'q7-b', text: 'Design minimalista e estético.', isCorrect: false },
+          { id: 'q7-c', text: 'Gamificação da interface.', isCorrect: true },
+          { id: 'q7-d', text: 'Flexibilidade e eficiência de uso.', isCorrect: false },
+        ],
+        bookmarked: false,
+        flagged: false,
+      },
+      {
+        id: 'q-8',
+        order: 8,
+        statement: 'A prototipação de baixa fidelidade se diferencia da de alta fidelidade principalmente por:',
+        alternatives: [
+          { id: 'q8-a', text: 'Utilizar ferramentas profissionais como Figma ou Adobe XD.', isCorrect: false },
+          { id: 'q8-b', text: 'Ser rápida, barata e focada em explorar conceitos e fluxos, sem detalhamento visual.', isCorrect: true },
+          { id: 'q8-c', text: 'Ser criada apenas por designers com experiência avançada.', isCorrect: false },
+          { id: 'q8-d', text: 'Representar fielmente as cores e tipografia do produto final.', isCorrect: false },
+        ],
+        bookmarked: false,
+        flagged: false,
+      },
+    ],
+  },
+]
