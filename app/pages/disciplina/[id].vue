@@ -21,7 +21,8 @@
 
     <!-- Content section -->
     <section>
-      <SharedSectionTitle title="Seu conteúdo" class="mb-3" />
+      <SharedSectionTitle v-model:collapsed="contentCollapsed" title="Seu conteúdo" class="mb-3" />
+      <template v-if="!contentCollapsed">
       <DisciplineContentSearch v-model="searchQuery" class="mb-4" />
       <div class="space-y-3">
         <DisciplineModuleCard
@@ -33,6 +34,7 @@
           Nenhum módulo encontrado.
         </p>
       </div>
+      </template>
     </section>
   </div>
 </template>
@@ -45,6 +47,7 @@ const { course, modules } = useCourse(courseId)
 const { greeting } = useUser()
 
 const searchQuery = ref('')
+const contentCollapsed = ref(false)
 
 const filteredModules = computed(() => {
   if (!searchQuery.value.trim()) return modules.value
