@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen flex flex-col">
     <!-- Quiz Header -->
-    <QuizQuizHeader
+    <QuizHeader
       v-if="currentQuestion"
       :current-question="currentQuestionIndex + 1"
       :total-questions="totalQuestions"
@@ -15,7 +15,7 @@
     <!-- Content -->
     <div class="flex-1 px-4 py-6 mx-auto max-w-3xl w-full space-y-6">
       <!-- Feedback (after grading) -->
-      <QuizQuizFeedback v-if="isGraded && result" :result="result" />
+      <QuizFeedback v-if="isGraded && result" :result="result" />
 
       <!-- Question Card -->
       <QuizQuestionCard
@@ -28,7 +28,7 @@
       />
 
       <!-- Navigation -->
-      <QuizQuizNavigation
+      <QuizNavigation
         :can-prev="currentQuestionIndex > 0"
         :can-next="currentQuestionIndex < totalQuestions - 1"
         :is-last="currentQuestionIndex === totalQuestions - 1"

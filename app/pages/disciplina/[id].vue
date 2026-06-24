@@ -4,7 +4,7 @@
     <p class="text-gray-600">{{ greeting }}</p>
 
     <!-- Banner -->
-    <DisciplineDisciplineBanner
+    <DisciplineBanner
       v-if="course"
       :course-code="course.code"
       :course-name="course.name"
