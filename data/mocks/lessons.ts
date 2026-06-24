@@ -1,10 +1,12 @@
 import type { LessonFile } from '../types'
 
 export const mockLessons: LessonFile[] = [
+  // course-1: FBI4021 Interface Humano Computador
   // Módulo 1 - Introdução a IHC
   {
     id: 'lesson-1',
     moduleId: 'module-1',
+    courseId: 'course-1',
     title: 'Introdução a IHC',
     fileUrl: '',
     fileType: 'pdf',
@@ -13,6 +15,7 @@ export const mockLessons: LessonFile[] = [
   {
     id: 'lesson-2',
     moduleId: 'module-1',
+    courseId: 'course-1',
     title: 'Livro Design de Interação',
     fileUrl: '',
     fileType: 'pdf',
@@ -21,6 +24,7 @@ export const mockLessons: LessonFile[] = [
   {
     id: 'lesson-3',
     moduleId: 'module-1',
+    courseId: 'course-1',
     title: 'Imagens, animações e ícones',
     fileUrl: '',
     fileType: 'pdf',
@@ -29,16 +33,17 @@ export const mockLessons: LessonFile[] = [
   {
     id: 'lesson-4',
     moduleId: 'module-1',
+    courseId: 'course-1',
     title: 'Cores e Apresentação de textos',
     fileUrl: '',
     fileType: 'pdf',
     order: 4,
   },
-
   // Módulo 3 - Personas e Jornadas
   {
     id: 'lesson-5',
     moduleId: 'module-3',
+    courseId: 'course-1',
     title: 'Slides - Personas',
     fileUrl: '',
     fileType: 'pdf',
@@ -47,6 +52,7 @@ export const mockLessons: LessonFile[] = [
   {
     id: 'lesson-6',
     moduleId: 'module-3',
+    courseId: 'course-1',
     title: 'Artigo - Mapa de Empatia',
     fileUrl: '',
     fileType: 'pdf',
@@ -55,9 +61,108 @@ export const mockLessons: LessonFile[] = [
   {
     id: 'lesson-7',
     moduleId: 'module-3',
+    courseId: 'course-1',
     title: 'Vídeo - Jornada do Usuário',
     fileUrl: '',
     fileType: 'video',
     order: 3,
+  },
+
+  // course-2: FBI0000 Programação Orientada a Objetos
+  {
+    id: 'lesson-8',
+    moduleId: '',
+    courseId: 'course-2',
+    title: 'Introdução a POO',
+    fileUrl: '',
+    fileType: 'pdf',
+    order: 1,
+  },
+  {
+    id: 'lesson-9',
+    moduleId: '',
+    courseId: 'course-2',
+    title: 'Herança e Polimorfismo',
+    fileUrl: '',
+    fileType: 'pdf',
+    order: 2,
+  },
+  {
+    id: 'lesson-10',
+    moduleId: '',
+    courseId: 'course-2',
+    title: 'Padrões de Projeto - Slides',
+    fileUrl: '',
+    fileType: 'pdf',
+    order: 3,
+  },
+
+  // course-3: FBI0001 Banco de Dados II
+  {
+    id: 'lesson-11',
+    moduleId: '',
+    courseId: 'course-3',
+    title: 'Normalização de Dados',
+    fileUrl: '',
+    fileType: 'pdf',
+    order: 1,
+  },
+  {
+    id: 'lesson-12',
+    moduleId: '',
+    courseId: 'course-3',
+    title: 'Transações e Concorrência',
+    fileUrl: '',
+    fileType: 'pdf',
+    order: 2,
+  },
+  {
+    id: 'lesson-13',
+    moduleId: '',
+    courseId: 'course-3',
+    title: 'Vídeo - Índices e Performance',
+    fileUrl: '',
+    fileType: 'video',
+    order: 3,
+  },
+
+  // course-4: FBI0002 Engenharia de Software
+  {
+    id: 'lesson-14',
+    moduleId: '',
+    courseId: 'course-4',
+    title: 'Metodologias Ágeis',
+    fileUrl: '',
+    fileType: 'pdf',
+    order: 1,
+  },
+  {
+    id: 'lesson-15',
+    moduleId: '',
+    courseId: 'course-4',
+    title: 'Documento de Requisitos - Template',
+    fileUrl: '',
+    fileType: 'doc',
+    order: 2,
+  },
+
+  // course-5: FBI0003 Redes de Computadores
+  {
+    id: 'lesson-16',
+    moduleId: '',
+    courseId: 'course-5',
+    title: 'Modelo OSI e TCP/IP',
+    fileUrl: '',
+    fileType: 'pdf',
+    order: 1,
+  },
+  {
+    id: 'lesson-17',
+    moduleId: '',
+    courseId: 'course-5',
+    title: 'Referência - RFC 2616 HTTP/1.1',
+    fileUrl: '',
+    fileType: 'link',
+    order: 2,
   },
 ]

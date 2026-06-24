@@ -68,6 +68,7 @@ export interface CourseModule {
 export interface LessonFile {
   id: string
   moduleId: string
+  courseId: string
   title: string
   fileUrl: string
   fileType: 'pdf' | 'video' | 'link' | 'doc'
