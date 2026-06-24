@@ -25,6 +25,12 @@ import {
   faPlay,
   faFile,
   faChevronDown,
+  faHome,
+  faFolder,
+  faCog,
+  faSignOutAlt,
+  faFilter,
+  faBook,
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faBookmark as farBookmark,
@@ -58,6 +64,12 @@ library.add(
   faPlay,
   faFile,
   faChevronDown,
+  faHome,
+  faFolder,
+  faCog,
+  faSignOutAlt,
+  faFilter,
+  faBook,
   farBookmark,
   farFlag,
 )
