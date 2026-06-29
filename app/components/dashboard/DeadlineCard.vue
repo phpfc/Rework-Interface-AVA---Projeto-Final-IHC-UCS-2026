@@ -28,7 +28,10 @@
       <!-- Action buttons -->
       <div class="space-y-2 pt-1">
         <template v-if="deadline.type === 'trabalho'">
-          <SharedActionButton label="Abrir Tarefa" />
+          <SharedActionButton
+            label="Abrir Tarefa"
+            @click="navigateTo(`/tarefa/${deadline.assignmentId}`)"
+          />
         </template>
         <template v-else>
           <SharedActionButton

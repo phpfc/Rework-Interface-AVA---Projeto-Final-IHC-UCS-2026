@@ -10,6 +10,7 @@ export const mockDeadlines: Deadline[] = [
     courseCode: 'FBI4021',
     professorName: 'Prof.ª Elisa Boff',
     room: 'Bloco 71 - 307',
+    assignmentId: 'assignment-1',
   },
   {
     id: 'deadline-2',
@@ -20,6 +21,7 @@ export const mockDeadlines: Deadline[] = [
     courseCode: 'FBI0000',
     professorName: 'Prof. Fulano de Tal',
     room: 'Bloco 71 - 600',
+    assignmentId: 'assignment-2',
   },
   {
     id: 'deadline-3',

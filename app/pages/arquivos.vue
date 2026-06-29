@@ -54,6 +54,7 @@
           variant="filled"
           :full-width="false"
           class="shrink-0 w-auto px-5"
+          @click="openFile(file.fileUrl)"
         />
       </div>
 
@@ -80,5 +81,9 @@ function fileIcon(fileType: string): string {
 function getCourseName(courseId: string): string {
   const course = getCourseForFile({ courseId } as any)
   return course ? `${course.code} - ${course.name}` : ''
+}
+
+function openFile(url: string) {
+  window.open(url, '_blank')
 }
 </script>

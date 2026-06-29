@@ -32,6 +32,21 @@ export interface Deadline {
   room: string
   quizId?: string
   summaryId?: string
+  assignmentId?: string
+}
+
+export interface Assignment {
+  id: string
+  courseId: string
+  courseName: string
+  courseCode: string
+  professorName: string
+  title: string
+  description: string
+  dueDate: string
+  status: 'pendente' | 'entregue'
+  maxScore: number
+  attachments: { name: string; url: string }[]
 }
 
 export interface Notice {
